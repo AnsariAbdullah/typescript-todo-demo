@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import List from './components/list';
 
 function App() {
 
@@ -43,17 +44,7 @@ function App() {
 			</div>
 			<div className="todo">
 				<ul className="list-wrapper">
-					{listItems && listItems.map((item, index) =>
-						<li className="list-item" key={index}>
-							{item}
-							<span
-								onClick={() => deleteItem(index)}
-								className="close"
-							>
-								X
-							</span>
-						</li>
-					)}
+					<List listItems={listItems} deleteItem={deleteItem} />
 				</ul>
 			</div>
 		</div>
