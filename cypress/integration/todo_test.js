@@ -8,5 +8,8 @@ describe('Check todo', function (){
 		cy.get('.input-box')
 			.type('bikes')
 			.should('have.value', 'bikes')
+
+		// cy.get('.list-item')
+		// 	.should('have.value', 'car')
 	})
 })
