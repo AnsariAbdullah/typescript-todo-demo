@@ -9,7 +9,7 @@ describe('Check todo', function (){
 			.type('bikes')
 			.should('have.value', 'bikes')
 
-		// cy.get('.list-item')
-		// 	.should('have.value', 'car')
+		cy.get('.list-item')
+			.should('have.text', 'carX')
 	})
 })
