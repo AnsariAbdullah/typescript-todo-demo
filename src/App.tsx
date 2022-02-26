@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import List from './components/list';
+import Header from './components/header';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
 
 	return (
 		<div className="App">
+			<Header title="My Logo" />
 			<div className="controls">
 				<input
 					type="text"
